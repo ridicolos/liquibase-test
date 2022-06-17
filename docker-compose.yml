@@ -6,10 +6,11 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: test
       POSTGRES_HOST_AUTH_METHOD: trust
       PGDATA: /var/lib/postgresql/data
     ports:
-    - "5432:5432"
+    - "5442:5432"
     volumes:
     - "${PWD}/pgdata:/var/lib/postgresql/data"
 
